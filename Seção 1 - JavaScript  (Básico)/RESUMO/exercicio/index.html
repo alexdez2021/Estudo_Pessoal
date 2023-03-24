@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        /*executando no console do navegador:
+                selecionando o corpo da página:
+                    window.document.body
+
+                obtendo a sintaxe HTML ou XML descrevendo os elementos descendentes:
+                        window.document.body.innerHTML = 'Um texto'
+                Se caso queira incrementar:
+                        window.document.body.innerHTML += 'alterado'
+                Se caso queira quebrar a linha:
+                window.document.body.innerHTML += 'Ao final <br>'
+        */
+
+
+        /* const nome = prompt ('Digite seu nome');
+        document.body.innerHTML += `Seu nome é <strong> ${nome} </strong> <br />`;
+        document.body.innerHTML += `Seu nome tem ${nome.length} letras <br />`
+        document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]} <br />`
+        document.body.innerHTML += `Qual primero indice da letra a no seu nome? ${nome.indexOf('a')} <br />`
+        document.body.innerHTML += `Qual é o ultimo indice da letra a no seu nome? ${nome.lastIndexOf('a', 9)} <br />`
+        document.body.innerHTML += `As últimas 3 letras do seu nome são? ${nome.slice(2 , 5)} <br />`
+        document.body.innerHTML += `As palavras do seu nome são: ${nome.split(' ')} <br />`
+        document.body.innerHTML += `Seu nome com letras maiúscula: ${nome.toUpperCase()} <br />`
+        document.body.innerHTML += `Seu nome com letras maiúscula: ${nome.match(/[a-z]/g)} <br />` */
+
+        const nome = prompt('Digite seu nome? ')
+        document.body.innerHTML += `Seu nome é <strong>${nome}</strong> <br />`;
+        document.body.innerHTML += `Seu nome possui ${nome.length} <strong>letras</strong> <br />`;
+        document.body.innerHTML += `A segunda letra do seu nome é:  ${nome[1]}`;
+        document.body.innerHTML += `Qual primero indice da letra a no seu nome? ${nome.indexOf('a')} <br />`;
+        document.body.innerHTML += `Qual é o ultimo indice da letra a no seu nome? ${nome.lastIndexOf('a', 9)} <br />`;
+        document.body.innerHTML += `as ultimas 3 letras do seu nome? ${nome.slice(1 , 4)}`
+       
+        
+    </script>
+
+</body>
+</html>
